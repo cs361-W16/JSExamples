@@ -1,0 +1,63 @@
+<script type="text/javascript" src="/assets/webjars/jquery/2.1.3/jquery.js"></script>
+
+Cards from https://code.google.com/archive/p/vector-playing-cards/downloads
+
+<h1>JQuery Button Click Action</h1>
+<body>
+<script type="text/javascript" src="/assets/javascript/dragula.js"></script>
+<link rel="stylesheet" type="text/css" href="/assets/css/dragula.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+
+
+<button id="target">click me</button>
+
+<script>
+    $( "#target" ).click(function() {
+  alert( "Handler for .click() called." );
+});
+</script>
+
+
+<h1>JQuery set image via button</h1>
+
+<img src="/assets/images/back.png" id="Card" style="width: 25%;">
+<BR>
+<button id="updateImg">Change Picture</button>
+<script>
+    $( "#updateImg" ).click(function() {
+    $('#Card').attr("src","/assets/images/jack_of_clubs.png");
+});
+</script>
+
+
+<h1>JQuery set image via click</h1>
+
+<img src="/assets/images/back.png" id="Card2" style="width: 100px;">
+<BR>
+<script>
+    $( "#Card2" ).click(function() {
+    $('#Card2').attr("src","/assets/images/ace_of_spades.png");
+});
+</script>
+
+
+<h1>Drag and Drop Card</h1>
+
+<div>
+<div id="left" class="dropArea">
+    <img src="/assets/images/ace_of_spades.png" id="Card3" style="width: 100px;">
+
+</div>
+    <div id="right" class="dropArea"> </div>
+</div>
+
+<BR>
+
+
+<script>
+    dragula([document.querySelector('#left'), document.querySelector('#right')]);
+</script>
+
+
+
+</body>

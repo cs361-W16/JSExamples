@@ -1,3 +1,12 @@
 /* Add additional stylesheets below
 -------------------------------------------------- */
 
+.dropArea{
+    float: left;
+    outline-width: 1px;
+    width: 100px;
+    outline-color: black;
+    outline-style: dashed;
+    height: 145px;
+    margin: 20px;
+}
